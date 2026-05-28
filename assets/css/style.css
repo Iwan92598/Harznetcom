@@ -1,0 +1,44 @@
+.hero-section {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+body {
+  padding: 0px; /* compensates for fixed navbar */
+}
+
+.navbar-brand {
+  padding: 0 !important;
+}
+
+.navbar-logo {
+  height: 40px !important;
+  display: block;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.footer-black {
+  background-color: #000000;
+}
+
+.text-justify-custom {
+  text-align: justify;
+}
+
