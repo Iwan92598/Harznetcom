@@ -16,8 +16,10 @@
   <link rel="manifest" href="<?= base_url('assets/manifest.json'); ?>">
 
   <!-- Bootstrap & AOS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap/4.5.2/css/bootstrap.min.css'); ?>"/>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" /> -->
+   <link rel="stylesheet" href="<?= base_url('assets/css/aos.css'); ?>" />
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css'); ?>">
