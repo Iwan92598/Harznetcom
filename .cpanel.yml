@@ -1,9 +1,19 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/harznetcom/public_html/
+    - export DEPLOYPATH=/home/harznetcom/public_html
+
+    # Folder utama website
     - /bin/cp -R application $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R system $DEPLOYPATH
+
+    # File utama website
     - /bin/cp index.php $DEPLOYPATH
-    - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp composer.json $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+
+    # Favicon dan logo
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp favicon_16x16.png $DEPLOYPATH
+    - /bin/cp favicon_32x32.png $DEPLOYPATH
+    - /bin/cp harznet.png $DEPLOYPATH
