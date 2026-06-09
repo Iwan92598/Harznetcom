@@ -79,7 +79,7 @@
           'speed' => 'Up to 41 Mbps',
           'price' => 'Rp. 140.000 / bulan',
           'fitur' => [
-            '2 - 4 Perangkat',
+            '2 - 8 Perangkat',
             'Browsing, Media Sosial, Streaming Video Standar',
             'Terbatas pada 1 Perangkat (HD Streaming, Gaming)'
           ]
@@ -89,7 +89,7 @@
           'speed' => 'Up to 53 Mbps',
           'price' => 'Rp. 195.000 / bulan',
           'fitur' => [
-            '4 - 6 Perangkat',
+            '8 - 15 Perangkat',
             'Streaming HD, Browsing, Video call',
             'Lindungi banyak perangkat untuk streaming 4K, gaming intensif'
           ]
@@ -99,7 +99,7 @@
           'speed' => 'Up to 63 Mbps',
           'price' => 'Rp. 225.000 / bulan',
           'fitur' => [
-            '6 - 10 Perangkat',
+            '15 - 20 Perangkat',
             'Rumah tangga besar, Kantor kecil',
             'Streaming 4k, Video call, gaming online pada beberapa perangkat'
           ]
@@ -109,7 +109,7 @@
           'speed' => 'Up to 100 Mbps',
           'price' => 'Rp. 350.000 / bulan',
           'fitur' => [
-            '10 - 15 Perangkat',
+            'Unlimited',
             'Keluarga besar, Kantor dengan banyak perangkat',
             'Streaming 4K, Bekerja dari rumah, Perangkat smart home'
           ]
