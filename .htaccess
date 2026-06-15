@@ -9,6 +9,7 @@ Options -Indexes
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+#  RewriteBase /siteharznet/
 
   # Jika file atau folder tidak ditemukan
   RewriteCond %{REQUEST_FILENAME} !-f
