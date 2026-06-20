@@ -84,6 +84,10 @@
                         </form>
 
                         <div class="mt-3 text-center small text-muted">
+                <em>Username: <strong>iwan123</strong> | Password: <strong>iwan123</strong></em>
+              </div>
+
+                        <div class="mt-3 text-center small text-muted">
                             <em>Silakan login menggunakan akun pelanggan Anda.</em>
                         </div>
 
