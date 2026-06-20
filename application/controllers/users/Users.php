@@ -1,6 +1,6 @@
 <?php
 
-class Dashboard_admin extends CI_Controller{
+class Users extends CI_Controller{
 
     public function __construct()
     {
@@ -11,7 +11,7 @@ class Dashboard_admin extends CI_Controller{
             Username atau Password Anda Belum Login!
             <button type="button" class="btn btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>');
-            redirect('auth/login');
+            redirect('user_auth/login');
         }
     }
     public function index()
@@ -19,6 +19,6 @@ class Dashboard_admin extends CI_Controller{
         // $this->load->view('templates/header');
         // $this->load->view('admin/dashboard_admin');
         // $this->load->view('templates/footer');
-                $this->load->view('admin/test/dashboard_admin2');
+                $this->load->view('users/template');
     }
 }
