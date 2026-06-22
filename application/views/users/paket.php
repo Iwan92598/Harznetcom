@@ -12,17 +12,17 @@
   <div class="btn-group" role="group" aria-label="Billing period">
     <input type="radio" class="btn-check" name="billing" id="billing-monthly" checked />
     <label class="btn btn-outline-primary" for="billing-monthly">Harznet Retail</label>
-    <!-- <input type="radio" class="btn-check" name="billing" id="billing-yearly" />
+    <input type="radio" class="btn-check" name="billing" id="billing-yearly" />
     <label class="btn btn-outline-primary" for="billing-yearly">
       Yearly <span class="badge text-bg-success ms-1">Save 20%</span>
-    </label> -->
+    </label>
   </div>
 </div>
 
 <!-- Plans -->
-  <div class="row g-4 row-cols-1 row-cols-md-3 mb-4">
+<div class="row g-4 row-cols-1 row-cols-md-3 mb-4">
   <!-- Starter -->
-    <div class="col">
+    <!-- <div class="col">
       <div class="card h-100">
         <div class="card-body p-4">
           <h5 class="fw-semibold">Home</h5>
@@ -52,9 +52,9 @@
           </ul>
         </div>
       </div>
-  </div>
+  </div> -->
   <!-- Pro (highlighted) -->
-  <div class="col">
+  <!-- <div class="col">
     <div class="card h-100 border-primary shadow-sm position-relative">
       <span
         class="badge text-bg-primary position-absolute top-0 start-50 translate-middle"
@@ -88,9 +88,9 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Enterprise -->
-  <div class="col">
+  <!-- <div class="col">
     <div class="card h-100">
       <div class="card-body p-4">
         <h5 class="fw-semibold">Velocity</h5>
@@ -120,9 +120,9 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
     <!-- Enterprise -->
-  <div class="col">
+  <!-- <div class="col">
     <div class="card h-100">
       <div class="card-body p-4">
         <h5 class="fw-semibold">Hyper</h5>
@@ -152,7 +152,44 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
+
+
+  <?php foreach ($paket_layanan as $paket): ?>
+
+<div class="col">
+    <div class="card h-100 position-relative <?= ($user->paket_id == $paket->id) ? 'border border-primary shadow-sm' : ''; ?>">
+
+        <?php if ($user->paket_id == $paket->id): ?>
+            <span class="badge text-bg-primary position-absolute top-0 start-50 translate-middle">
+                Paket Anda
+            </span>
+        <?php endif; ?>
+
+        <div class="card-body p-4">
+            <h5 class="fw-semibold"><?= $paket->nama_paket ?></h5>
+
+            <p class="text-secondary small mb-3">
+                Speed Up to <?= $paket->kecepatan ?>
+            </p>
+
+            <div class="mb-3">
+                <span class="display-5 fw-bold">
+                    <?= number_format($paket->harga, 0, ',', '.') ?>
+                </span>
+                <span class="text-secondary">/bulan</span>
+            </div>
+
+            <a href="#" class="btn <?= ($user->id == $paket->id) ? 'btn-primary' : 'btn-outline-primary' ?> w-100 mb-3">
+                Detail Paket
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<?php endforeach; ?>
+
 </div>
 
 <!-- Feature comparison table -->

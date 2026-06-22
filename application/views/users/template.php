@@ -95,6 +95,7 @@
     <?php if ($this->session->flashdata('pesan')): ?>
     <?= $this->session->flashdata('pesan'); ?>
 <?php endif; ?>
+
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
@@ -105,6 +106,14 @@
       <!--end::Sidebar-->
       <!--begin::App Main-->
       <main class="app-main">
+        <a href="https://wa.me/6281378888410" target="_blank"
+   style="position: fixed; bottom: 70px; right: 30px; z-index: 1000; background-color: #25D366; color: white; border-radius: 50px; padding: 10px 16px; display: flex; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-decoration: none; font-weight: 600; font-family: Arial, sans-serif; transition: background-color 0.3s ease;"
+   onmouseover="this.style.backgroundColor='#1ebe57'"
+   onmouseout="this.style.backgroundColor='#25D366'"
+   title="Chat via WhatsApp">
+  <img src="<?= base_url('assets/images/whatsapp.png') ?>" alt="WhatsApp" style="width: 28px; height: 28px; object-fit: contain; margin-right: 10px;">
+  Hubungi Kami
+</a>
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->

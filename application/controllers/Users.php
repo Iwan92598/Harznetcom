@@ -48,12 +48,23 @@ class Users extends CI_Controller {
     }
 
     // Paket layanan
-    public function paket()
-    {
-        $data['title'] = 'Paket';
-        $data['content'] = 'users/paket';
-        $this->load->view('users/template',$data);
-    }
+public function paket()
+{
+    $this->load->model('User_model');
+
+    $data['paket_layanan'] = $this->User_model->get_all();
+
+    $data['user'] = $this->db
+        ->where('id', $this->session->userdata('id_user'))
+        ->get('users')
+        ->row();
+        
+
+    $data['title'] = 'Paket';
+    $data['content'] = 'users/paket';
+
+    $this->load->view('users/template', $data);
+}
 
     // Tagihan
     public function tagihan()

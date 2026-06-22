@@ -37,7 +37,7 @@
           <li class="nav-item">
             <a 
               class="btn ml-lg-3 mt-2 mt-lg-0" 
-              href="<?= base_url('auth/login'); ?>" 
+              href="<?= base_url('user_auth/login'); ?>" 
               style="background-color: #007bff; color: white; border: 1px solid #007bff;" 
               onmouseover="this.style.backgroundColor='transparent'; this.style.color='#007bff';" 
               onmouseout="this.style.backgroundColor='#007bff'; this.style.color='white';"
@@ -50,3 +50,4 @@
     </div>
   </nav>
 </html>
+<!-- <?= base_url('user_auth/login'); ?> -->
