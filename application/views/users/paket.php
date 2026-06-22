@@ -14,7 +14,7 @@
     <label class="btn btn-outline-primary" for="billing-monthly">Harznet Retail</label>
     <input type="radio" class="btn-check" name="billing" id="billing-yearly" />
     <label class="btn btn-outline-primary" for="billing-yearly">
-      Yearly <span class="badge text-bg-success ms-1">Save 20%</span>
+      Corporated <span class="badge text-bg-success ms-1"></span>
     </label>
   </div>
 </div>
