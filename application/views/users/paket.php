@@ -11,10 +11,14 @@
 <div class="d-flex justify-content-center mb-4">
   <div class="btn-group" role="group" aria-label="Billing period">
     <input type="radio" class="btn-check" name="billing" id="billing-monthly" checked />
-    <label class="btn btn-outline-primary" for="billing-monthly">Harznet Retail</label>
+    <label class="btn btn-outline-primary" for="billing-monthly">Retail</label>
     <input type="radio" class="btn-check" name="billing" id="billing-yearly" />
     <label class="btn btn-outline-primary" for="billing-yearly">
       Corporated <span class="badge text-bg-success ms-1"></span>
+    </label>
+    <input type="radio" class="btn-check" name="billing" id="billing-yearly" />
+    <label class="btn btn-outline-primary" for="billing-yearly">
+      Dedicated<span class="badge text-bg-success ms-1"></span>
     </label>
   </div>
 </div>
