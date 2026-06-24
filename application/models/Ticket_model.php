@@ -7,7 +7,7 @@ class Ticket_model extends CI_Model
         return $this->db
             ->where('id_user', $id_user)
             ->order_by('updated_at', 'DESC')
-            ->get('tickets')
+            ->get('ticket')
             ->result();
     }
 }
