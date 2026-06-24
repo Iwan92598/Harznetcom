@@ -548,7 +548,7 @@
           .addEventListener('click', () => table.print(false, true));
       });
     </script>
-    <script>
+    <!-- <script>
     const data = <?= json_encode($tickets); ?>;
     </script>
     <script>
@@ -625,7 +625,7 @@
                 table.clearFilter();
             }
         });
-    </script>
+    </script> -->
     <script>
         // Hilangkan alert setelah 3 detik (3000 ms)
         $(document).ready(function () {
