@@ -87,9 +87,9 @@ public function paket()
     {
         $this->load->model('Ticket_model');
 
-        $id_user = $this->session->userdata('id_user');
+        // $id_user = $this->session->userdata('id_user');
 
-        $data['tickets'] = $this->Ticket_model->getByUser($id_user);
+        // $data['tickets'] = $this->Ticket_model->getByUser($id_user);
 
         $data['title'] = 'Tiket';
         $data['content'] = 'users/tiket';
