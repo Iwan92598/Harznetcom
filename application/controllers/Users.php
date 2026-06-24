@@ -85,8 +85,15 @@ public function paket()
     // Tiket gangguan
     public function tiket()
     {
+        $this->load->model('Ticket_model');
+
+        $id_user = $this->session->userdata('id_user');
+
+        $data['tickets'] = $this->Ticket_model->getByUser($id_user);
+
         $data['title'] = 'Tiket';
         $data['content'] = 'users/tiket';
-        $this->load->view('users/template',$data);
+
+        $this->load->view('users/template', $data);
     }
 }

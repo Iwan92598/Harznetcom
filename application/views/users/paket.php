@@ -25,138 +25,6 @@
 
 <!-- Plans -->
 <div class="row g-4 row-cols-1 row-cols-md-3 mb-4">
-  <!-- Starter -->
-    <!-- <div class="col">
-      <div class="card h-100">
-        <div class="card-body p-4">
-          <h5 class="fw-semibold">Home</h5>
-          <p class="text-secondary small mb-3">Speed Up to 41 Mbps</p>
-          <div class="mb-3">
-            <span class="display-5 fw-bold">140.000</span>
-            <span class="text-secondary">/bulan</span>
-          </div>
-          <a href="#" class="btn btn-outline-primary w-100 mb-3">Get started</a>
-          <ul class="list-unstyled small mb-0">
-            <li class="mb-2">
-              <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-              Kuota Unlimited
-            </li>
-            <li class="mb-2">
-              <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-              Browsing, Media Sosial, Streaming Video Standar
-            </li>
-            <li class="mb-2">
-              <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-              Terbatas pada 1 Perangkat (HD Streaming, Gaming)
-            </li>
-            <li class="text-secondary">
-              <i class="bi bi-dash-circle me-2" aria-hidden="true"></i>
-              Keluarga besar, Kantor dengan banyak perangkat
-            </li>
-          </ul>
-        </div>
-      </div>
-  </div> -->
-  <!-- Pro (highlighted) -->
-  <!-- <div class="col">
-    <div class="card h-100 border-primary shadow-sm position-relative">
-      <span
-        class="badge text-bg-primary position-absolute top-0 start-50 translate-middle"
-        >Most popular</span
-      >
-      <div class="card-body p-4">
-        <h5 class="fw-semibold">Speed</h5>
-        <p class="text-secondary small mb-3">Speed Up to 53 Mbps</p>
-        <div class="mb-3">
-          <span class="display-5 fw-bold">195.000</span>
-          <span class="text-secondary">/bulan</span>
-        </div>
-        <a href="#" class="btn btn-primary w-100 mb-3">Start free trial</a>
-        <ul class="list-unstyled small mb-0">
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Kuota Unlimited
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Streaming HD, Browsing, Video call
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            perangkat untuk streaming 4K, gaming intensif
-          </li>
-          <li class="text-secondary">
-              <i class="bi bi-dash-circle me-2" aria-hidden="true"></i>
-              Keluarga besar, Kantor dengan banyak perangkat
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-  <!-- Enterprise -->
-  <!-- <div class="col">
-    <div class="card h-100">
-      <div class="card-body p-4">
-        <h5 class="fw-semibold">Velocity</h5>
-        <p class="text-secondary small mb-3">Speed Up to 63 Mbps.</p>
-        <div class="mb-3">
-          <span class="display-5 fw-bold">225.000</span>
-          <span class="text-secondary">/bulan</span>
-        </div>
-        <a href="#" class="btn btn-outline-primary w-100 mb-3">Contact sales</a>
-        <ul class="list-unstyled small mb-0">
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Kuota Unlimited
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Rumah tangga besar, Kantor kecil
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Streaming 4k, Video call, gaming online pada beberapa perangkat
-          </li>
-          <li class="text-secondary">
-              <i class="bi bi-dash-circle me-2" aria-hidden="true"></i>
-              Bekerja dari rumah, Perangkat smart home
-            </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
-    <!-- Enterprise -->
-  <!-- <div class="col">
-    <div class="card h-100">
-      <div class="card-body p-4">
-        <h5 class="fw-semibold">Hyper</h5>
-        <p class="text-secondary small mb-3">Speed Up to 100 Mbps</p>
-        <div class="mb-3">
-          <span class="display-5 fw-bold">350.000</span>
-          <span class="text-secondary">/bulan</span>
-        </div>
-        <a href="#" class="btn btn-outline-primary w-100 mb-3">Contact sales</a>
-        <ul class="list-unstyled small mb-0">
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Kuota Unlimited
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Keluarga besar, Kantor dengan banyak perangkat
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Video call, gaming online pada beberapa perangkat
-          </li>
-          <li class="mb-2">
-            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
-            Streaming 4K, Bekerja dari rumah, Perangkat smart home
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
 
 
   <?php foreach ($paket_layanan as $paket): ?>
@@ -302,3 +170,138 @@
     </div>
   </div>
 </div>
+
+
+              <!-- Tidak memakai database -->
+  <!-- Starter -->
+    <!-- <div class="col">
+      <div class="card h-100">
+        <div class="card-body p-4">
+          <h5 class="fw-semibold">Home</h5>
+          <p class="text-secondary small mb-3">Speed Up to 41 Mbps</p>
+          <div class="mb-3">
+            <span class="display-5 fw-bold">140.000</span>
+            <span class="text-secondary">/bulan</span>
+          </div>
+          <a href="#" class="btn btn-outline-primary w-100 mb-3">Get started</a>
+          <ul class="list-unstyled small mb-0">
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+              Kuota Unlimited
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+              Browsing, Media Sosial, Streaming Video Standar
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+              Terbatas pada 1 Perangkat (HD Streaming, Gaming)
+            </li>
+            <li class="text-secondary">
+              <i class="bi bi-dash-circle me-2" aria-hidden="true"></i>
+              Keluarga besar, Kantor dengan banyak perangkat
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div> -->
+  <!-- Pro (highlighted) -->
+  <!-- <div class="col">
+    <div class="card h-100 border-primary shadow-sm position-relative">
+      <span
+        class="badge text-bg-primary position-absolute top-0 start-50 translate-middle"
+        >Most popular</span
+      >
+      <div class="card-body p-4">
+        <h5 class="fw-semibold">Speed</h5>
+        <p class="text-secondary small mb-3">Speed Up to 53 Mbps</p>
+        <div class="mb-3">
+          <span class="display-5 fw-bold">195.000</span>
+          <span class="text-secondary">/bulan</span>
+        </div>
+        <a href="#" class="btn btn-primary w-100 mb-3">Start free trial</a>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Kuota Unlimited
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Streaming HD, Browsing, Video call
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            perangkat untuk streaming 4K, gaming intensif
+          </li>
+          <li class="text-secondary">
+              <i class="bi bi-dash-circle me-2" aria-hidden="true"></i>
+              Keluarga besar, Kantor dengan banyak perangkat
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+  <!-- Enterprise -->
+  <!-- <div class="col">
+    <div class="card h-100">
+      <div class="card-body p-4">
+        <h5 class="fw-semibold">Velocity</h5>
+        <p class="text-secondary small mb-3">Speed Up to 63 Mbps.</p>
+        <div class="mb-3">
+          <span class="display-5 fw-bold">225.000</span>
+          <span class="text-secondary">/bulan</span>
+        </div>
+        <a href="#" class="btn btn-outline-primary w-100 mb-3">Contact sales</a>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Kuota Unlimited
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Rumah tangga besar, Kantor kecil
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Streaming 4k, Video call, gaming online pada beberapa perangkat
+          </li>
+          <li class="text-secondary">
+              <i class="bi bi-dash-circle me-2" aria-hidden="true"></i>
+              Bekerja dari rumah, Perangkat smart home
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+    <!-- Enterprise -->
+  <!-- <div class="col">
+    <div class="card h-100">
+      <div class="card-body p-4">
+        <h5 class="fw-semibold">Hyper</h5>
+        <p class="text-secondary small mb-3">Speed Up to 100 Mbps</p>
+        <div class="mb-3">
+          <span class="display-5 fw-bold">350.000</span>
+          <span class="text-secondary">/bulan</span>
+        </div>
+        <a href="#" class="btn btn-outline-primary w-100 mb-3">Contact sales</a>
+        <ul class="list-unstyled small mb-0">
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Kuota Unlimited
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Keluarga besar, Kantor dengan banyak perangkat
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Video call, gaming online pada beberapa perangkat
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>
+            Streaming 4K, Bekerja dari rumah, Perangkat smart home
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> -->

@@ -107,13 +107,13 @@
       <!--begin::App Main-->
       <main class="app-main">
         <a href="https://wa.me/6281378888410" target="_blank"
-   style="position: fixed; bottom: 70px; right: 30px; z-index: 1000; background-color: #25D366; color: white; border-radius: 50px; padding: 10px 16px; display: flex; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-decoration: none; font-weight: 600; font-family: Arial, sans-serif; transition: background-color 0.3s ease;"
-   onmouseover="this.style.backgroundColor='#1ebe57'"
-   onmouseout="this.style.backgroundColor='#25D366'"
-   title="Chat via WhatsApp">
-  <img src="<?= base_url('assets/images/whatsapp.png') ?>" alt="WhatsApp" style="width: 28px; height: 28px; object-fit: contain; margin-right: 10px;">
-  Hubungi Kami
-</a>
+          style="position: fixed; bottom: 70px; right: 30px; z-index: 1000; background-color: #25D366; color: white; border-radius: 50px; padding: 10px 16px; display: flex; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); text-decoration: none; font-weight: 600; font-family: Arial, sans-serif; transition: background-color 0.3s ease;"
+          onmouseover="this.style.backgroundColor='#1ebe57'"
+          onmouseout="this.style.backgroundColor='#25D366'"
+          title="Chat via WhatsApp">
+          <img src="<?= base_url('assets/images/whatsapp.png') ?>" alt="WhatsApp" style="width: 28px; height: 28px; object-fit: contain; margin-right: 10px;">
+          Hubungi Kami
+        </a>
         <!--begin::App Content Header-->
         <div class="app-content-header">
           <!--begin::Container-->
@@ -466,135 +466,23 @@
 
     <script>
       const statusBadge = (cell) => {
-        const value = cell.getValue();
-        const map = { Active: 'success', Invited: 'info', Suspended: 'secondary' };
-        const color = map[value] || 'secondary';
-        return `<span class="badge text-bg-${color}">${value}</span>`;
+      const value = cell.getValue();
+
+      const map = {
+          Open: 'primary',
+          Diproses: 'warning',
+          'Menunggu Pelanggan': 'info',
+          Selesai: 'success',
+          Ditutup: 'secondary'
       };
 
+      const color = map[value] || 'secondary';
+
+      return `<span class="badge bg-${color}">${value}</span>`;
+  };
+
       document.addEventListener('DOMContentLoaded', () => {
-        const data = [
-          {
-            id: 1,
-            name: 'Olivia Bennett',
-            email: 'olivia@example.com',
-            role: 'Admin',
-            status: 'Active',
-            joined: '2024-03-12',
-          },
-          {
-            id: 2,
-            name: 'Liam Carter',
-            email: 'liam@example.com',
-            role: 'Editor',
-            status: 'Active',
-            joined: '2024-04-08',
-          },
-          {
-            id: 3,
-            name: 'Emma Dawson',
-            email: 'emma@example.com',
-            role: 'Viewer',
-            status: 'Invited',
-            joined: '2024-06-21',
-          },
-          {
-            id: 4,
-            name: 'Noah Evans',
-            email: 'noah@example.com',
-            role: 'Editor',
-            status: 'Suspended',
-            joined: '2024-07-15',
-          },
-          {
-            id: 5,
-            name: 'Ava Foster',
-            email: 'ava@example.com',
-            role: 'Admin',
-            status: 'Active',
-            joined: '2024-08-30',
-          },
-          {
-            id: 6,
-            name: 'Ethan Grant',
-            email: 'ethan@example.com',
-            role: 'Viewer',
-            status: 'Active',
-            joined: '2024-09-14',
-          },
-          {
-            id: 7,
-            name: 'Sophia Hayes',
-            email: 'sophia@example.com',
-            role: 'Editor',
-            status: 'Active',
-            joined: '2024-10-02',
-          },
-          {
-            id: 8,
-            name: 'Mason Ingram',
-            email: 'mason@example.com',
-            role: 'Viewer',
-            status: 'Invited',
-            joined: '2024-11-19',
-          },
-          {
-            id: 9,
-            name: 'Isabella Jones',
-            email: 'isabella@example.com',
-            role: 'Admin',
-            status: 'Active',
-            joined: '2025-01-05',
-          },
-          {
-            id: 10,
-            name: 'Lucas Klein',
-            email: 'lucas@example.com',
-            role: 'Viewer',
-            status: 'Suspended',
-            joined: '2025-02-18',
-          },
-          {
-            id: 11,
-            name: 'Mia Lopez',
-            email: 'mia@example.com',
-            role: 'Editor',
-            status: 'Active',
-            joined: '2025-03-22',
-          },
-          {
-            id: 12,
-            name: 'Logan Moore',
-            email: 'logan@example.com',
-            role: 'Viewer',
-            status: 'Active',
-            joined: '2025-04-09',
-          },
-          {
-            id: 13,
-            name: 'Charlotte Nelson',
-            email: 'charlotte@example.com',
-            role: 'Admin',
-            status: 'Active',
-            joined: '2025-04-27',
-          },
-          {
-            id: 14,
-            name: 'Henry Owens',
-            email: 'henry@example.com',
-            role: 'Editor',
-            status: 'Invited',
-            joined: '2025-05-11',
-          },
-          {
-            id: 15,
-            name: 'Amelia Price',
-            email: 'amelia@example.com',
-            role: 'Viewer',
-            status: 'Active',
-            joined: '2025-05-17',
-          },
-        ];
+        const data = <?= json_encode($tickets); ?>;
 
         const table = new Tabulator('#users-table', {
           data: data,
@@ -604,38 +492,46 @@
           paginationSizeSelector: [10, 25, 50, 100],
           movableColumns: true,
           columns: [
-            { title: '#', field: 'id', width: 60, headerSort: true },
-            { title: 'Name', field: 'name', headerFilter: 'input' },
-            { title: 'Email', field: 'email', headerFilter: 'input' },
-            {
-              title: 'Role',
-              field: 'role',
-              headerFilter: 'list',
-              headerFilterParams: { values: ['', 'Admin', 'Editor', 'Viewer'] },
-              width: 120,
-            },
-            {
-              title: 'Status',
-              field: 'status',
-              formatter: statusBadge,
-              headerFilter: 'list',
-              headerFilterParams: { values: ['', 'Active', 'Invited', 'Suspended'] },
-              width: 130,
-              hozAlign: 'center',
-            },
-            { title: 'Joined', field: 'joined', sorter: 'date', width: 130 },
+              {
+                  title: 'No Tiket',
+                  field: 'no_tiket'
+              },
+              {
+                  title: 'Kategori',
+                  field: 'kategori'
+              },
+              {
+                  title: 'Subjek',
+                  field: 'subjek'
+              },
+              {
+                  title: 'Prioritas',
+                  field: 'prioritas'
+              },
+              {
+                  title: 'Status',
+                  field: 'status',
+                  formatter: statusBadge,
+                  hozAlign: 'center'
+              },
+              {
+                  title: 'Update Terakhir',
+                  field: 'updated_at'
+              }
           ],
         });
 
         document.getElementById('table-filter').addEventListener('input', (e) => {
           const value = e.target.value;
           if (value) {
-            table.setFilter([
+          table.setFilter([
               [
-                { field: 'name', type: 'like', value: value },
-                { field: 'email', type: 'like', value: value },
+                  { field: 'no_tiket', type: 'like', value: value },
+                  { field: 'subjek', type: 'like', value: value },
+                  { field: 'kategori', type: 'like', value: value },
+                  { field: 'status', type: 'like', value: value },
               ],
-            ]);
+          ]);
           } else {
             table.clearFilter();
           }
@@ -652,15 +548,92 @@
           .addEventListener('click', () => table.print(false, true));
       });
     </script>
-
     <script>
-  // Hilangkan alert setelah 3 detik (3000 ms)
-  $(document).ready(function () {
-    setTimeout(function () {
-      $(".alert").alert('close');
-    }, 3000); // Ubah waktu sesuai kebutuhan
-  });
-</script>
+    const data = <?= json_encode($tickets); ?>;
+    </script>
+    <script>
+    const table = new Tabulator("#users-table", {
+        data: data,
+        layout: "fitColumns",
+
+        pagination: true,
+        paginationSize: 10,
+
+        columns: [
+            {
+                title: "No Tiket",
+                field: "no_tiket"
+            },
+            {
+                title: "Kategori",
+                field: "kategori"
+            },
+            {
+                title: "Subjek",
+                field: "subjek"
+            },
+            {
+                title: "Prioritas",
+                field: "prioritas"
+            },
+            {
+                title: "Status",
+                field: "status",
+                formatter: function(cell){
+
+                    let status = cell.getValue();
+                    let badge = "secondary";
+
+                    if(status === "Open")
+                        badge = "primary";
+
+                    else if(status === "Diproses")
+                        badge = "warning";
+
+                    else if(status === "Selesai")
+                        badge = "success";
+
+                    else if(status === "Ditutup")
+                        badge = "dark";
+
+                    return `<span class="badge bg-${badge}">${status}</span>`;
+                }
+            },
+            {
+                title: "Update",
+                field: "updated_at"
+            }
+        ]
+    });
+    </script>
+    <script>
+    document
+        .getElementById("table-filter")
+        .addEventListener("keyup", function() {
+
+            const value = this.value;
+
+            if(value){
+                table.setFilter([
+                    [
+                        {field:"no_tiket", type:"like", value:value},
+                        {field:"subjek", type:"like", value:value},
+                        {field:"status", type:"like", value:value}
+                    ]
+                ]);
+            }else{
+                table.clearFilter();
+            }
+        });
+    </script>
+    <script>
+        // Hilangkan alert setelah 3 detik (3000 ms)
+        $(document).ready(function () {
+          setTimeout(function () {
+            $(".alert").alert('close');
+          }, 3000); // Ubah waktu sesuai kebutuhan
+        });
+      </script>
 
     <!--end::Script-->
   </body>
