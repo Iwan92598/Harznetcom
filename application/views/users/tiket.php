@@ -34,8 +34,8 @@
     <div id="users-table"></div>
     </div>
     <div class="card-footer text-secondary small">
-    Powered by
+    <!-- Powered by
     <a href="https://tabulator.info/" target="_blank" rel="noopener">Tabulator</a>
-    &mdash; vanilla JS, no jQuery required.
+    &mdash; vanilla JS, no jQuery required. -->
     </div>
 </div>
