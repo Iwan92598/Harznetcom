@@ -80,13 +80,72 @@
                       <p>Pengumuman</p>
                   </a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <a href="<?= base_url('users/profile') ?>"
                     class="nav-link <?= ($this->uri->segment(2) == 'profile') ? 'active' : ''; ?>">
                       <i class="nav-icon bi bi-person"></i>
                       <p>profile</p>
                   </a>
+              </li> -->
+
+              <li class="nav-item <?= ($this->uri->segment(2) == 'profile') ? 'menu-open' : ''; ?>">
+                <a href="#" class="nav-link <?= ($this->uri->segment(2) == 'profile') ? 'active' : ''; ?>">
+                    <i class="nav-icon bi bi-person"></i>
+                    <p>
+                        Profile
+                        <i class="nav-arrow bi bi-chevron-right"></i>
+                    </p>
+                </a>
+
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="<?= base_url('users/profile') ?>"
+                          class="nav-link <?= ($this->uri->segment(2) == 'profile') ? 'active' : ''; ?>">
+                            <i class="nav-icon bi bi-circle"></i>
+                            <p>Profile</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"
+                          class="nav-link">
+                            <i class="nav-icon bi bi-circle"></i>
+                            <p>Pengaturan</p>
+                        </a>
+                    </li>                    
+                </ul>
+            </li>
+
+              <!-- <li class="nav-item ">
+                <a href="#" class="nav-link ">
+                  <i class="nav-icon bi bi-person"></i>
+                  <p>
+                    Profile
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                  <a href="<?= base_url('users/profile') ?>"
+                    class="nav-link <?= ($this->uri->segment(2) == 'profile') ? 'active' : ''; ?>">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>profile</p>
+                  </a>
               </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Pengaturan</p>
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
+              <li class="nav-item mt-2">
+                  <a href="<?= base_url('user_auth/logout'); ?>"
+                    class="nav-link text-danger">
+                      <i class="nav-icon bi bi-box-arrow-right"></i>
+                      <p>Keluar</p>
+                  </a>
+              </li>            
 
             </ul>
             <!--end::Sidebar Menu-->
