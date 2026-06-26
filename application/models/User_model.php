@@ -31,5 +31,25 @@ class User_model extends CI_Model {
         ->row();
 }
 
+public function getProfile($id_user)
+{
+    return $this->db
+        ->select('
+            users.*,
+            paket_layanan.nama_paket,
+            paket_layanan.kecepatan,
+            paket_layanan.harga
+        ')
+        ->from('users')
+        ->join(
+            'paket_layanan',
+            'paket_layanan.id = users.id_paket',
+            'left'
+        )
+        ->where('users.id', $id_user)
+        ->get()
+        ->row();
+}
+
     
 }

@@ -80,6 +80,13 @@
                       <p>Pengumuman</p>
                   </a>
               </li>
+              <li class="nav-item">
+                  <a href="<?= base_url('users/profile') ?>"
+                    class="nav-link <?= ($this->uri->segment(2) == 'profile') ? 'active' : ''; ?>">
+                      <i class="nav-icon bi bi-person"></i>
+                      <p>profile</p>
+                  </a>
+              </li>
 
             </ul>
             <!--end::Sidebar Menu-->

@@ -45,6 +45,8 @@ class User_auth extends CI_Controller {
                 'customer_id' => $auth->kode_pelanggan,
                 'nama'        => $auth->nama_lengkap,
                 'username'    => $auth->username,
+                'nohp'        => $auth->no_hp,
+                'email'       => $auth->email,
                 'level'       => 'pelanggan'
             ]);
 
@@ -58,6 +60,8 @@ class User_auth extends CI_Controller {
                 $this->session->unset_userdata('customer_id');
                 $this->session->unset_userdata('nama');
                 $this->session->unset_userdata('username');
+                $this->session->unset_userdata('nohp');
+                $this->session->unset_userdata('email');
                 $this->session->unset_userdata('level');
 
                 redirect('user_auth/login');
