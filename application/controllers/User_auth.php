@@ -47,7 +47,7 @@ class User_auth extends CI_Controller {
                 'username'    => $auth->username,
                 'nohp'        => $auth->no_hp,
                 'email'       => $auth->email,
-                'level'       => 'pelanggan'
+                'level'       => 'StaffNOC'
             ]);
 
             redirect('users');
