@@ -123,7 +123,7 @@
                   />
                   <p>
                     <?= $this->session->userdata('nama'); ?> - <?= ucfirst($this->session->userdata('level')); ?>
-                    <small>Pelanggan sejak Nov 2025</small>
+                    <small>Staff NOC sejak Nov 2025</small>
                   </p>
                 </li>
                 <!--end::User Image-->
